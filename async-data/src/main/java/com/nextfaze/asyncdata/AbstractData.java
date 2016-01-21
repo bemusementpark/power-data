@@ -97,6 +97,11 @@ public abstract class AbstractData<T> implements Data<T> {
         return UNKNOWN;
     }
 
+    /** Does nothing by default. */
+    @Override
+    public void next() {
+    }
+
     @Override
     public boolean isEmpty() {
         return size() <= 0;
@@ -112,6 +117,7 @@ public abstract class AbstractData<T> implements Data<T> {
         }
     }
 
+    /** By default, returns an iterator that doesn't support removal. */
     @Override
     public Iterator<T> iterator() {
         return new DataIterator<>(this);

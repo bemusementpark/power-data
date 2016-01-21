@@ -277,9 +277,8 @@ public abstract class IncrementalArrayData<T> extends AbstractData<T> implements
         refresh();
     }
 
-    /** Load the next increment of elements. */
-    @UiThread
-    public final void loadNext() {
+    @Override
+    public final void next() {
         proceed();
     }
 

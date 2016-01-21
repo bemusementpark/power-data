@@ -102,6 +102,10 @@ public interface Data<T> extends Iterable<T> {
     @UiThread
     void reload();
 
+    /** If any more elements are available, load some more. */
+    @UiThread
+    void next();
+
     /** Close this instance. Other methods should not called after this. */
     @UiThread
     void close();
