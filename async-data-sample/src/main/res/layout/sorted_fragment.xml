@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.nextfaze.asyncdata.widget.DataLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/sorted_fragment_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <!-- List -->
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/sorted_fragment_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_component="content"/>
+
+    <!-- Loading -->
+
+    <ProgressBar
+            style="@android:style/Widget.Holo.ProgressBar"
+            android:id="@+id/sorted_fragment_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_component="loading"/>
+
+    <!-- Empty -->
+
+    <TextView
+            android:id="@+id/sorted_fragment_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_component="empty"
+            android:text="Empty"
+            tools:ignore="HardcodedText"/>
+
+    <!-- Error -->
+
+    <TextView
+            android:id="@+id/sorted_fragment_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_component="error"
+            android:textColor="#ffff0000"
+            android:textStyle="italic"/>
+
+</com.nextfaze.asyncdata.widget.DataLayout>

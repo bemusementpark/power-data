@@ -8,7 +8,10 @@ apply plugin: 'com.android.application'
 apply from: '../nextfaze.gradle'
 
 dependencies {
+    compile 'com.nextfaze:power-adapters-recyclerview:0.8.2'
+    compile 'com.nextfaze:power-adapters-async-data:0.8.2'
     compile rootProject.ext.supportAppCompat
+    compile rootProject.ext.supportRecyclerView
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.google.guava:guava:18.0'
     compile rootProject.ext.supportAnnotations

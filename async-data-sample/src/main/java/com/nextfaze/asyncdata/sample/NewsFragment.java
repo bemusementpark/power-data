@@ -195,7 +195,7 @@ public final class NewsFragment extends Fragment {
 
     @OnClick(R.id.news_fragment_load_next)
     void onLoadNextClick() {
-        mManualIncrementalData.loadNext();
+        mManualIncrementalData.next();
     }
 
     void onReloadClick() {
