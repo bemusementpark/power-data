@@ -1,2 +1,5 @@
-rootProject.name = 'async-data-android'
-include ':async-data', ':async-data-rx', ':async-data-sample'
+rootProject.name = 'power-data-root'
+include ':power-data'
+include ':power-data-sample'
+include ':power-data-rx'
+include ':power-data-recyclerview-v7'
