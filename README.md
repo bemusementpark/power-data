@@ -81,8 +81,7 @@ items being reloaded from the source. See the `Data` javadoc for how they differ
 and loading child views.
 It's a `RelativeLayout` subclass, and it works by accepting a `Data` instance, then registering to receive change
 notifications. If the contents is empty, your marked empty view will be shown instead of the list view. If an error occurs,
-the error view will be shown until a reload is triggered. `DataLayout` has several extension points to customize this behaviour
-to suite the needs of your application.
+the error view will be shown until a reload is triggered. `DataLayout` has several extension points to customize this behaviour to suit the needs of your application.
 
 Here's an example of how to declare a `DataLayout` in XML:
 
